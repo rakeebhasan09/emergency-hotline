@@ -25,9 +25,20 @@ document.getElementById("cards-row").addEventListener("click", function (e) {
 
 // Copy Count Functionality
 document.getElementById("cards-row").addEventListener("click", function (e) {
-	if (e.target.className.includes("copy-number")) {
+	const copyBtn = e.target.closest(".copy-number");
+	if (copyBtn) {
 		const allreadyCopied = getElementValue("copied-number");
 		const newCopied = Number(allreadyCopied) + 1;
 		setElementValue("copied-number", newCopied);
 	}
+
+	// copy to clipboard
+	const card = copyBtn.closest(".single-card");
+	const number = card.querySelector("h3").innerText.trim();
+	navigator.clipboard.writeText(number).then(() => {
+		copyBtn.innerHTML = `<i class="fa-regular fa-circle-check"></i> Copied`;
+		setTimeout(() => {
+			copyBtn.innerHTML = `<i class="fa-regular fa-copy"></i> Copy`;
+		}, 1500);
+	});
 });
