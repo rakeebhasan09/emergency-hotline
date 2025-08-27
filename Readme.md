@@ -1,6 +1,6 @@
 # **Emergency Hotline**
 
-### ✅ The answers to the questions given for Assignment Five are provided below.
+## ✅ The answers to the questions given for Assignment Five are provided below.👇
 
 ## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
@@ -68,6 +68,6 @@ By using Event Delegation, an event listener can be added to a parent element to
     </tr>
     <tr >
         <td>It is used to prevent the default behavior on an element.</td>
-        <td>It is used to stop event bubbling.</td>
+        <td>It is used to stop event bubbling. &nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
 </table>
