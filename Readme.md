@@ -1,8 +1,10 @@
 # **Emergency Hotline**
 
+---
+
 ## ✅ The answers to the questions given for Assignment Five are provided below.👇
 
-## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+### What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 <table style="width:100%">
     <tr style="background-color:#151B23;">
@@ -31,6 +33,8 @@
     </tr>
 </table>
 
+---
+
 ### How do you create and insert a new element into the DOM?
 
 1. First, the parent div needs to be selected.
@@ -45,9 +49,13 @@ const childElement = document.createComment("element-name");
 parentElement.appendChild(childElement);
 ```
 
+---
+
 ### What is Event Bubbling and how does it work?
 
 Event Bubbling is a process where, when an event occurs on an element of a web page, the event first acts on that element. Then it moves to the parent element, then to the next parent element, and so on, eventually reaching the Document.
+
+---
 
 ### What is Event Delegation in JavaScript? Why is it useful?
 
@@ -58,6 +66,8 @@ By using Event Delegation, an event listener can be added to a parent element to
 -   Performance improves
 -   Events of dynamic elements can also be handled
 -   Less code is required
+
+---
 
 ### What is the difference between preventDefault() and stopPropagation() methods?
 
