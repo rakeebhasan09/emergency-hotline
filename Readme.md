@@ -1,8 +1,8 @@
 # **Emergency Hotline**
 
-# The answers to the questions given for Assignment Five are provided below.✅
+### The answers to the questions given for Assignment Five are provided below.✅
 
-#### What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 <table style="width:100%">
     <tr>
