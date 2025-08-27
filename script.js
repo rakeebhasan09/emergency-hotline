@@ -35,6 +35,7 @@ document.getElementById("cards-row").addEventListener("click", function (e) {
 		const card = copyBtn.closest(".single-card");
 		const number = card.querySelector("h3").innerText.trim();
 		navigator.clipboard.writeText(number).then(() => {
+			alert(`${number} This number has been copied✅`);
 			copyBtn.innerHTML = `<i class="fa-regular fa-circle-check"></i> Copied`;
 			setTimeout(() => {
 				copyBtn.innerHTML = `<i class="fa-regular fa-copy"></i> Copy`;
@@ -97,4 +98,9 @@ document.getElementById("cards-row").addEventListener("click", function (e) {
 			historyContainer.appendChild(newDiv);
 		}
 	}
+});
+
+// Clear Call History
+document.getElementById("clear-history").addEventListener("click", function () {
+	document.getElementById("history-container").innerHTML = "";
 });
