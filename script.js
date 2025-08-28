@@ -1,8 +1,3 @@
-// const copyBtns = document.querySelectorAll(".copy-number");
-// for (const copyBtn of copyBtns) {
-// 	console.log(copyBtn);
-// }
-
 // Get Element Functionality
 function getElementValue(id) {
 	const targetElement = document.getElementById(id).innerText;
