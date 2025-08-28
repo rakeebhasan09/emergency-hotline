@@ -24,13 +24,13 @@ document.getElementById("cards-row").addEventListener("click", function (e) {
 	if (copyBtn) {
 		const allreadyCopied = getElementValue("copied-number");
 		const newCopied = Number(allreadyCopied) + 1;
-		setElementValue("copied-number", newCopied);
 
 		// copy to clipboard
 		const card = copyBtn.closest(".single-card");
 		const number = card.querySelector("h3").innerText.trim();
 		navigator.clipboard.writeText(number).then(() => {
 			alert(`${number} This number has been copied✅`);
+			setElementValue("copied-number", newCopied);
 			copyBtn.innerHTML = `<i class="fa-regular fa-circle-check"></i> Copied`;
 			setTimeout(() => {
 				copyBtn.innerHTML = `<i class="fa-regular fa-copy"></i> Copy`;
